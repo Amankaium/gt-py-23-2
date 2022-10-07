@@ -28,7 +28,7 @@ class DayBalanceValuta(DayBalance, Valuta):
         self.set_valuta(valute_type)
 
     def show_balance(self):
-        print(f"{self.current_balance} {self.type}")
+        print(f"{self.current_balance} {self.type}")  # cash_1.type
 
     def incasation(self):
         if self.current_balance > 0:
@@ -40,7 +40,7 @@ class DayBalanceValuta(DayBalance, Valuta):
 
 # пришёл кассир, выдаём кассу
 cash_1 = DayBalanceValuta(1500, "06.10.2022", "som")
-cash_1.show_balance()
+cash_1.show_balance()  # cash_1.show_balance(cash_1)  # cash_1.type
 cash_1.incasation()
 
 cash_2 = DayBalanceValuta(20000, "09.10.2022", "Tenge")
